@@ -21,7 +21,14 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -58,13 +65,14 @@ fun MyApp() {
     Surface(
         Modifier
             .fillMaxHeight()
-            .fillMaxWidth(), color = Color.Gray.copy(0.5f)
+            .fillMaxWidth(),
+        color = Color.Gray.copy(0.5f)
     ) {
         val str = "Adoption requirements\n" +
-                "1. Adult.\n" +
-                "2. Have a fixed source of income and can bear the cost of keeping a dog.\n" +
-                "3. Make sure you don't abandon it.\n" +
-                "4. Send a video photo or something to the former owner when you have time."
+            "1. Adult.\n" +
+            "2. Have a fixed source of income and can bear the cost of keeping a dog.\n" +
+            "3. Make sure you don't abandon it.\n" +
+            "4. Send a video photo or something to the former owner when you have time."
 //        Text(text = "Ready... Set... GO!")
         val feedItems = mutableListOf<PetInfo>()
         feedItems.add(PetInfo("Sprouting", "Teddy", "1 year old", "China", str))
@@ -110,7 +118,8 @@ fun RowCard(petInfo: PetInfo) {
                             DetailsActivity::class.java
                         ).putExtra("data", petInfo)
                     )
-                }, shape = RoundedCornerShape(10.dp)
+                },
+            shape = RoundedCornerShape(10.dp)
         ) {
             Row {
                 Image(
