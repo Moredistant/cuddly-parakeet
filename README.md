@@ -7,12 +7,12 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-###Jetpack Composes first week Challenge-Puppy Adoption
+Jetpack Composes first week Challenge-Puppy Adoption
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-###I want Lego
+I want Lego! This is the first time I have used Compose to develop APP. For me, he makes me very unaccustomed.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
